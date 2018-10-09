@@ -28,7 +28,7 @@ public class TweetController {
         Tweet tweet = new Tweet();
         tweet.setText("foooooo");
         tweet.setCreatedAt(new Date());
-        tweetRepository.save(tweet);
+        return tweetRepository.save(tweet);
     }
 
     @GetMapping("/tweets")
