@@ -26,9 +26,9 @@ public class Publisher {
     public String publish(@PathVariable("msg") final String msg) {
 
 //        kafkaTemplate.send(TOPIC, msg);
-        this.kafkaTemplate.send("myTopic", "foo1");
-        this.kafkaTemplate.send("myTopic", "foo2");
-        this.kafkaTemplate.send("myTopic", "foo3");
+        this.kafkaTemplate.send(TOPIC, "foo1");
+        this.kafkaTemplate.send(TOPIC, "foo2");
+        this.kafkaTemplate.send(TOPIC, "foo3");
 
 
     return "Success!";
