@@ -46,7 +46,7 @@ public class HighwayWebClient {
                         () -> System.out.println("Vehicle stream stoped!"));
     }
 
-     * Used for development reasons only
+     /** Used for development reasons only
      * To run the sample, can be done by: mvn test (SpringBootTest)
      */
     public static void main(String[] args) {
