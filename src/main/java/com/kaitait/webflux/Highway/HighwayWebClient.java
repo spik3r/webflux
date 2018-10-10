@@ -1,13 +1,16 @@
 package com.kaitait.webflux.Highway;
 
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.Disposable;
+import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Schedulers;
 
 import java.time.Duration;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Component
 public class HighwayWebClient {
 
     private WebClient webClient = WebClient.builder()
